@@ -22,6 +22,7 @@ app.use(function (req, res, next) {
     next();
 });
 // app.use('/api/v1/public/products-images', express.static('public/products-images'))
+console.log('=====call=====');
 app.routes = (0, v1_1.appRouterV1)(app);
 app.listen(configs_1.CONFIG.port, () => {
     console.log(`listening on ${configs_1.CONFIG.appUrl}:${configs_1.CONFIG.port}`);

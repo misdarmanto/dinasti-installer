@@ -17,9 +17,17 @@ exports.PromotionsModel = _1.sequelize.define('promotions', {
         allowNull: false,
         defaultValue: (0, sequelize_1.UUIDV4)()
     },
-    promotionDiscount: {
-        type: sequelize_1.DataTypes.NUMBER,
-        allowNull: false
+    promotionProductPrice1: {
+        type: sequelize_1.DataTypes.DECIMAL,
+        allowNull: true
+    },
+    promotionProductPrice2: {
+        type: sequelize_1.DataTypes.DECIMAL,
+        allowNull: true
+    },
+    promotionProductPrice3: {
+        type: sequelize_1.DataTypes.DECIMAL,
+        allowNull: true
     },
     promotionStartDate: {
         type: sequelize_1.DataTypes.STRING,
